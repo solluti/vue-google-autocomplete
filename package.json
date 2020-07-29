@@ -1,12 +1,12 @@
 {
-  "name": "vue-google-autocomplete",
-  "version": "1.1.0",
+  "name": "@solluti/vue-google-autocomplete",
+  "version": "1.1.1",
   "description": "Vue component to Google Places Autocomplete",
   "main": "src/VueGoogleAutocomplete.vue",
-  "homepage": "https://github.com/olefirenko/vue-google-autocomplete",
+  "homepage": "https://github.com/solluti/vue-google-autocomplete",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olefirenko/vue-google-autocomplete.git"
+    "url": "https://github.com/solluti/vue-google-autocomplete.git"
   },
   "peerDependencies": {
     "vue": ">=2"
@@ -14,7 +14,8 @@
   "keywords": [
     "vue",
     "google",
-    "autocomplete"
+    "autocomplete",
+    "solluti"
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
@@ -30,7 +31,7 @@
       "./test/helpers/setup.js"
     ]
   },
-  "author": "Dmitriy Olefyrenko <dmitriy.olefirenko@gmail.com>",
+  "author": "Solluti Tecnologias <atendimento@solluti.com.br>",
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.18.2",
