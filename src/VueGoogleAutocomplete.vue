@@ -1,7 +1,7 @@
 <template>
   <input
       ref="autocomplete"
-      autocomplete="new"
+      autocomplete="new-password"
       autocorrect="off"
       spellcheck="false"
       type="text"
