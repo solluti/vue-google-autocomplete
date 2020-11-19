@@ -1,6 +1,6 @@
 {
   "name": "@solluti/vue-google-autocomplete",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Vue component to Google Places Autocomplete",
   "main": "src/VueGoogleAutocomplete.vue",
   "homepage": "https://github.com/solluti/vue-google-autocomplete",
