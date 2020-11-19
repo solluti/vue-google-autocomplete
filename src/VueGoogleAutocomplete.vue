@@ -359,6 +359,7 @@ export default {
       this.$refs.autocomplete.setAttribute('readonly', 'readonly');
 
       setTimeout(() => {
+        this.$refs.autocomplete.setAttribute('autocomplete', 'new');
         this.$refs.autocomplete.removeAttribute('readonly');
       }, 500);
     }
