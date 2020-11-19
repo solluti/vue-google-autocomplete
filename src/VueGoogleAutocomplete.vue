@@ -1,6 +1,7 @@
 <template>
     <input
             ref="autocomplete"
+            autocomplete="off"
             type="text"
             :class="classname"
             :id="id"
@@ -140,6 +141,8 @@
             );
 
             this.autocomplete.addListener('place_changed', this.onPlaceChanged);
+
+            this.disableAutoComplete();
         },
 
         methods: {
@@ -346,6 +349,29 @@
                 }
                 return output;
             }
+
+          /**
+           * Disable autocomplete
+           */
+          disableAutoComplete() {
+
+            let elements = document.querySelectorAll('[autocomplete="off"]');
+
+            if (!elements) {
+              return;
+            }
+
+            elements.forEach(element => {
+              element.setAttribute('readonly', 'readonly');
+              element.setAttribute('autocorrect', 'off');
+              element.setAttribute('spellcheck', 'false');
+              element.setAttribute('autocomplete', 'new');
+
+              setTimeout(() => {
+                element.removeAttribute('readonly');
+              }, 500);
+            });
+          }
         }
     }
 </script>
