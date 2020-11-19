@@ -1,8 +1,7 @@
 <template>
   <input
       ref="autocomplete"
-      autocorrect="off"
-      autocomplete="off"
+      autocomplete="new"
       spellcheck="false"
       type="text"
       :class="classname"
