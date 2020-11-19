@@ -2,6 +2,7 @@
   <input
       ref="autocomplete"
       autocomplete="new"
+      autocorrect="off"
       spellcheck="false"
       type="text"
       :class="classname"
@@ -359,7 +360,7 @@ export default {
       this.$refs.autocomplete.setAttribute('readonly', 'readonly');
 
       setTimeout(() => {
-        this.$refs.autocomplete.setAttribute('autocomplete', 'new');
+        this.$refs.autocomplete.setAttribute('autocomplete', 'new-password');
         this.$refs.autocomplete.removeAttribute('readonly');
       }, 500);
     }
